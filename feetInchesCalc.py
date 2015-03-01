@@ -7,7 +7,6 @@ def measurements():
 
     program_continue = input("Do you want to keep a running total of your measurements? 1 for yes, 2 for no: ");
 
-
     feet = input("Enter feet portion of distance: ");
     inch = input("Enter inches portion of distance: ");
     subTotal += (float(feet) + (float(inch)/12))
