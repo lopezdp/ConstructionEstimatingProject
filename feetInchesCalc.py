@@ -7,9 +7,10 @@ def measurements():
 
     program_continue = input("Do you want to keep a running total of your measurements? 1 for yes, 2 for no: ");
 
+
     feet = input("Enter feet portion of distance: ");
     inch = input("Enter inches portion of distance: ");
-    subTotal += (feet + (inch/12))
+    subTotal += (float(feet) + (float(inch)/12))
     
     while(programOn):
 
@@ -18,7 +19,7 @@ def measurements():
         if (program_continue == 1):
             feet = input("Enter feet portion of distance: ");
             inch = input("Enter inches portion of distance: ");
-            subTotal += (feet + (inch/12))
+            subTotal += (float(feet) + (float(inch)/12))
         elif (program_continue == 2):
             print subTotal
             total = subTotal
